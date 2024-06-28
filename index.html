@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Calhas Pitanga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+<div class="my-slider">
+  
+  <div><img src="./assets/img/soldador.jpg" alt="metalurgica"></div>
+  <div><img src="./assets/img/soldador2.jpg" alt="soldador"></div>
+</div>
+<!-- or ul.my-slider > li -->
+<script type="module">
+    var slider = tns({
+      container: '.my-slider',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      mouseDrag: true,
+      autoplayButtonOutput: false,
+      controls: false,
+      nav: false
+    });
+    </script>
+</body>
+</html>
